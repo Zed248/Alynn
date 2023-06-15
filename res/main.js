@@ -14,7 +14,7 @@ function createNav(items) {
 
     var sticky = nav.offsetTop;
 
-    window.addEventListener('scroll', (e) => {
+    window.addEventListener('scroll', function() {
         if (window.pageYOffset >= sticky) {
             nav.classList.add("sticky")
         } else {

@@ -1,14 +1,82 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="res/main.css" rel="stylesheet">
+    <link href="res/responsive.css" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="logo">Hello</div>
+        <nav class="nav-bar">
+            <p class="link title">Alynn</p>
+            <div class="link-container">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#">About</a>
+                <a class="link" href="#">Contact</a>
+            </div>
+            <div class="hamburger">
+                <div class="hamburger-btn"></div>
+            </div>
+        </nav>
+        <section class="my-section">
+            <div class="home-show-case">
+                <p class="s-c-t s_h">Lifetime music Creation</p>
+                <p class="s-c-t">Follow me for more information</p><button class="default-btn">Follow me</button>
+            </div>
+
+            <div class="iframe">
+                
+            </div>
+        </section>
+    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.querySelector('.nav-bar');
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        let menuOpen = false;
+
+        var hamburger = document.querySelector('.hamburger');
+        var hamburgerBtn = document.querySelector('.hamburger-btn');
+        var linkContainer = document.querySelector('.link-container');
+
+        hamburger.addEventListener('click', () => {
+            if(!menuOpen) {
+                hamburgerBtn.classList.add('active');
+                linkContainer.classList.add('active');
+                console.log("open")
+                menuOpen = true;
+            } else {
+                hamburgerBtn.classList.remove('active');
+                linkContainer.classList.remove('active');
+                menuOpen = false;
+                console.log("false")
+            }
+        })
+
+
+
+    </script>
 </body>
-<script src="res/main.js"></script>
+
 </html>
