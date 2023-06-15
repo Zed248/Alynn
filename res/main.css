@@ -47,6 +47,18 @@
 .title {
     font-size: 25pt;
     letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.title::after {
+    position: absolute;
+    content: "Music is my life";
+    font-size: 9px;
+    transform: translate(120px, 0px);
+    background-color: rgba(81, 255, 255, 0.219);
+    padding: 1em;
+    border-radius: 14px;
+    letter-spacing: 2px;
 }
 
 .title:hover {
@@ -129,7 +141,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
 }
 
 .s-c-t.s_h {

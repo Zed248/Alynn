@@ -4,6 +4,10 @@
 
     }
 
+    .nav-bar {
+        padding: 2em;
+    }
+
     .hamburger {
         display: flex;
         z-index: 5;
