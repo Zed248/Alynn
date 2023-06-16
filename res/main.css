@@ -306,6 +306,10 @@
   padding: 3em 3em;
 }
 
+.self-about p {
+    text-align: justify;
+}
+
 .plate-two {
   height: auto;
   opacity: 0;
@@ -359,6 +363,12 @@
   font-size: 14px;
   cursor: pointer;
   box-shadow: 1px 4px 4px teal;
+}
+
+.default-btn:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
 }
 
 .color1 {
