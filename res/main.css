@@ -70,6 +70,7 @@
     justify-content: flex-end;
     transition: 0.5s;
     position: relative;
+    
 }
 
 .link-container.active {
@@ -161,4 +162,48 @@
     outline: none;
     margin-top: 2em;
     font-size: 15pt;
+}
+
+
+/* ----------------------- About ------------------------- */
+.wrapper_about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-plate {
+    width: 500px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+    padding: 2em;    
+}
+
+.profile-photo {
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    
+}
+
+.profile {
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile::after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: translateY(50%);
+    background-color: yellow;
 }
