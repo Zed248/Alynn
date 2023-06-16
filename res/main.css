@@ -196,7 +196,7 @@
 .name-plate {
   width: 600px;
   height: 1500px;
-  background-color: rgba(0, 0, 0, 0.13);
+  /* background-color: rgba(0, 0, 0, 0.13); */
   border-radius: 15px;
   padding: 2em 0 2em 0;
 }
