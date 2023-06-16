@@ -1,19 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link href="../res/main.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper_about">
         <div class="name-plate">
-            <div class="profile-photo">
-                <div class="profile"></div>
+            <div class="slide-btn">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
             </div>
-            <!-- <h1>Lin Htet</h1> -->
+            <div class="plate-one">
+                <div class="profile-photo">
+                    <div class="profile"></div>
+                </div>
+                <div class="name-content">
+                    <h1>Lin Htet</h1>
+                    <div class="note-signs">
+                        <i class="fa-solid fa-guitar" style="transform: translateY(10px); color: rgb(0, 255, 123)"></i>
+                        <i class="fa-solid fa-music" style="transform: translateY(5px); color: rgb(130, 216, 130);"></i>
+                        <i class="fa-solid fa-music" style="transform: translateY(-10px); color: aquamarine;"></i>
+                        <i class="fa-solid fa-microphone-lines"
+                            style="transform: translateY(5px); color: rgb(255, 160, 36);"></i>
+                        <i class="fa-solid fa-music" style="transform: translateY(10px); color: azure;"></i>
+                        <i class="fa-solid fa-headphones"
+                            style="transform: translateY(-25px); color: rgb(209, 161, 254);"></i>
+                    </div>
+                </div>
+                <div class="self-about">
+                    <p>Composer, Song Writer</p>
+                    <p>Welcome to the enchanting world of music! 🎹🎤✨ As you step into my realm, you'll find yourself
+                        immersed in the captivating melodies and heartfelt lyrics crafted by a true artist. Allow me to
+                        share the story of my musical journey as a composer, songwriter, and singer, and invite you to
+                        join me on this harmonious adventure.
+
+                        ✨ Composer: Capturing Emotions in Musical Notes ✨
+                        With every composition I create, I embark on a quest to evoke emotions and paint vivid
+                        soundscapes. Like a painter with a palette of musical notes, I weave together melodies that
+                        touch the depths of the soul. Each piece I compose is a testament to my passion for crafting
+                        intricate harmonies and intricate arrangements that captivate and inspire listeners.
+
+                        🖋️ Songwriter: Weaving Tales through Poetic Lyrics 🖋️
+                        Words have a unique power to connect us, and as a songwriter, I harness this power to weave
+                        captivating tales that resonate with the heart. From love's tender embrace to the trials and
+                        triumphs of life, my lyrics breathe life into emotions and stories. With a pen in hand, I craft
+                        verses that dance with melodies, painting a vivid tapestry of human experiences.
+
+                        🎤 Singer: The Voice that Sings from the Soul 🎤
+                        When the melodies and lyrics come together, it's time for my voice to take flight. With each
+                        note that escapes my lips, I aim to touch hearts and ignite a spark within listeners. From
+                        powerful ballads that stir the depths of the soul to upbeat anthems that make you want to dance,
+                        my voice becomes a vessel through which emotions are channeled, resonating with authenticity and
+                        passion.
+
+                        Join me on this melodious journey as I continue to compose, write, and sing, sharing my love for
+                        music with the world. Together, let's create a symphony of emotions that transcends boundaries
+                        and brings joy to all who listen.
+
+                        🌟 Let the music be our guide, and may our souls forever dance to its enchanting rhythm. 🌟
+
+
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="plate-two">
+                <div class="phone-sec">
+                    <h1>Contact me</h1>
+                    <p>Call me via >></p>
+                    <div class="flex">
+                        <label class="label">Official Phone: </label><li>+95 09449115400</li>
+                    </div>
+                    <div class="flex">
+                        <label class="label">Official Phone: </label><li>+95 09666658693</li>
+                    </div>
+                    <div class="flex">
+                        <label class="label">Email: </label><li>lynnhtetkoko@gmail.com</li><
+                    </div>
+                </div>
+                <div class="intro-me">
+                    <p class="address">Pyin Ma Nar, Nay Pyi Taw</p>
+                </div>
+                <div class="official-links">
+                    <button class="default-btn color1">Youtube</button>
+                    <button class="default-btn color2">Instagram</button>
+                    <button class="default-btn color3">Facebook</button>
+                    <button class="default-btn color4">Tiktok</button>
+                    <button class="default-btn color5">Know More</button>
+
+                </div>
+
+                <div class="name-card">
+                    <img src="../img/pf(1).jpg">
+                    <img src="../img/pf(3).jpg">
+                    <img src="../img/pf(4).jpg">
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
+<script>
+    var sideBtn = document.querySelector('.slide-btn');
+    var firstPg = document.querySelector('.plate-one')
+    var secPg = document.querySelector('.plate-two');
+
+    let menuOpen = false;
+    sideBtn.addEventListener('click', () => {
+        if (!menuOpen) {
+            firstPg.classList.add('active');
+            sideBtn.classList.add('active')
+            secPg.classList.add('active')
+            menuOpen = true;
+        } else {
+            firstPg.classList.remove('active');
+            sideBtn.classList.remove('active');
+            secPg.classList.remove('active')
+            menuOpen = false;
+        }
+    })
+</script>
+
 </html>
