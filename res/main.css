@@ -256,6 +256,7 @@
   background-attachment: scroll;
 }
 
+
 .profile::after {
   position: absolute;
   content: '';
