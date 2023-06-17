@@ -13,7 +13,8 @@
     <div class="wrapper_about">
         <div class="name-plate">
             <div class="slide-btn">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <i class="fa-solid fa-arrow-right-to-bracket" id="slide"></i>
+                <a href="../index.html"><i class="fa-solid fa-home" id="home"></i></a>
             </div>
             <div class="plate-one">
                 <div class="profile-photo">
@@ -34,7 +35,8 @@
                 </div>
                 <div class="self-about">
                     <li>Composer, Song Writer</li>
-                    <p>Welcome to the enchanting world of music! 🎹🎤<br>✨ As you step into my realm, you'll find yourself
+                    <p>Welcome to the enchanting world of music! 🎹🎤<br>✨ As you step into my realm, you'll find
+                        yourself
                         immersed in the captivating melodies and heartfelt lyrics crafted by a true artist. Allow me to
                         share the story of my musical journey as a composer, songwriter, and singer, and invite you to
                         join me on this harmonious adventure.<br>
@@ -74,42 +76,46 @@
             </div>
             <div class="plate-two">
                 <div class="phone-sec">
-                    <h1>Contact me</h1>
+                    <h1 class="contact-me-title">Contact me</h1>
                     <p>Call me via >></p>
                     <div class="flex">
-                        <label class="label">Official Phone: </label><li>+95 09449115400</li>
+                        <label class="label">Official Phone: </label>
+                        <li>+95 09449115400</li>
                     </div>
                     <div class="flex">
-                        <label class="label">Official Phone: </label><li>+95 09666658693</li>
+                        <label class="label">Official Phone: </label>
+                        <li>+95 09666658693</li>
                     </div>
                     <div class="flex">
-                        <label class="label">Email: </label><li>lynnhtetkoko@gmail.com</li><
+                        <label class="label">Email: </label>
+                        <li>lynnhtetkoko@gmail.com</li>
                     </div>
-                </div>
-                <div class="intro-me">
-                    <p class="address">Pyin Ma Nar, Nay Pyi Taw</p>
-                </div>
-                <div class="official-links">
-                    <button class="default-btn color1">Youtube</button>
-                    <button class="default-btn color2">Instagram</button>
-                    <button class="default-btn color3">Facebook</button>
-                    <button class="default-btn color4">Tiktok</button>
-                    <button class="default-btn color5">Know More</button>
+                    <div class="intro-me">
+                        <p class="address">Pyin Ma Nar, Nay Pyi Taw</p>
+                    </div>
+                    <div class="follow-up">
+                        <h1 class="follow">Follow me on</h1>
+                        <div class="official-links">
+                            <button class="default-btn color1">Youtube</button>
+                            <button class="default-btn color2">Instagram</button>
+                            <button class="default-btn color3">Facebook</button>
+                            <button class="default-btn color4">Tiktok</button>
+                            <button class="default-btn color5">Know More</button>
+                        </div>
+                    </div>
+
+                    <div class="name-card">
+                        <img src="../img/pf(1).jpg">
+                        <img src="../img/pf(3).jpg">
+                        <img src="../img/pf(4).jpg">
+                    </div>
 
                 </div>
-
-                <div class="name-card">
-                    <img src="../img/pf(1).jpg">
-                    <img src="../img/pf(3).jpg">
-                    <img src="../img/pf(4).jpg">
-                </div>
-
             </div>
         </div>
-    </div>
 </body>
 <script>
-    var sideBtn = document.querySelector('.slide-btn');
+    var sideBtn = document.querySelector('#slide');
     var firstPg = document.querySelector('.plate-one')
     var secPg = document.querySelector('.plate-two');
 

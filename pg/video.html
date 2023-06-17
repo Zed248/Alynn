@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="../res/main.css" rel="stylesheet" type="text/css">
+    <link href="../res/responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <marquee class="logo">အနုပညာဆိုတာ ရိုးသားဖို့လိုတယ်...</marquee>
+        <nav class="nav-bar">
+            <p class="link title">Alynn</p>
+            <div class="link-container">
+                <a class="link" href="../index.html">Home</a>
+                <a class="link" href="./video.html">Video</a>
+                <a class="link" href="#">News</a>
+                <a class="link" href="./about.html">About</a>
+            </div>
+            <div class="hamburger">
+                <div class="hamburger-btn"></div>
+            </div>
+        </nav>
+        <section>
+            <div class="iframe-container">
+                <h4>Song Name</h4>
+                <p>Description</p>
+                <div class="iframe">
+                    <iframe class="main-video"></iframe>
+                </div>
+            </div>
+            <div class="iframe-container">
+                <h4>Song Name</h4>
+                <p>Description</p>
+                <div class="iframe">
+                    <iframe class="main-video"></iframe>
+                </div>
+            </div>
+
+            <div class="sub-category-container">
+                <h2>Watch Out</h2>
+                <div class="mini-video">
+                    <iframe class="m-v-def"></iframe>
+                    <iframe class="m-v-def"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+                    <iframe class="m-v hide"></iframe>
+
+                </div>
+                <button class="view-more">View More</button>
+            </div>
+
+        </section>
+
+        <footer>
+            <h1>Alynn's Personal Blog</h1>
+            <div class="sub-ft">
+                <div class="ft-content">
+                    <h3>Contact me</h3>
+                    <div class="ft-link">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                        <li>Youtube</li>
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <li>Facebook</li>
+                        <i class="fa-brands fa-telegram fa-2x"></i>
+                        <li>Telegram</li>
+                    </div>
+
+                </div>
+
+                <div class="ft-content">
+                    <h3>Music</h3>
+                    <div class="ft-link">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                        <li>Youtube</li>
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <li>Facebook</li>
+                        <i class="fa-brands fa-telegram fa-2x"></i>
+                        <li>Telegram</li>
+                    </div>
+
+                </div>
+
+                <div class="ft-content">
+                    <h3>Official MTV</h3>
+                    <div class="ft-link">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                        <li>Youtube</li>
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <li>Facebook</li>
+                        <i class="fa-brands fa-telegram fa-2x"></i>
+                        <li>Telegram</li>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="ft-copyright">
+                <p>Copyright 2023 by Rakkha. All Rights Reserved.</p>
+                <p>This is Powered by Rakkha Lin Maung</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../res/act.js" type="text/JavaScript"></script>
+    <script>
+        $(document).ready(function () {
+            let menuOpen = false;
+            $(".view-more").click(function () {
+                if (!menuOpen) {
+                    $(".m-v").removeClass('hide', 1000);
+                    $(".view-more").text("View Less")
+                    menuOpen = true;
+                } else {
+                    $(".m-v").addClass('hide');
+                    $(".view-more").text("View More")
+                    menuOpen = false;
+                }
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>

@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alynn's Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="res/main.css" rel="stylesheet">
-    <link href="res/responsive.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="res/main.css" rel="stylesheet" type="text/css">
+    <link href="res/responsive.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="wrapper">
-        <marquee class="logo">အနုပညာဟာ ရိုးသားဖို့လိုတယ်...</marquee>
+        <marquee class="logo">အနုပညာဆိုတာ ရိုးသားဖို့လိုတယ်...</marquee>
         <nav class="nav-bar">
             <p class="link title">Alynn</p>
             <div class="link-container">
-                <a class="link" href="#">Home</a>
+                <a class="link" href="./pg/video.html">Video</a>
+                <a class="link" href="#">News</a>
                 <a class="link" href="./pg/about.html">About</a>
-                <a class="link" href="#">Contact</a>
             </div>
             <div class="hamburger">
                 <div class="hamburger-btn"></div>
@@ -30,48 +32,153 @@
         <section class="my-section">
             <div class="home-show-case">
                 <p class="s-c-t s_h">Lifetime music Creation</p>
-                <p class="s-c-t">Follow me for more information</p><button class="default-btn">Follow me</button>
+                <p class="s-c-t">Follow me for more information</p><button class="default-btn">New Release</button>
             </div>
 
             <div class="iframe">
-                
+
+            </div>
+            <div class="container">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="item1 active"></li>
+                        <li class="item2"></li>
+                        <li class="item3"></li>
+                        <li class="item4"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="img/pf(1).jpg" alt="Chania">
+                            <div class="carousel-caption">
+                                <h4>Sing</h4>
+                                <p>Watch latest release of my songs</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/pf(2).jpg" alt="Chania">
+                            <div class="carousel-caption">
+                                <h4>Compose</h4>
+                                <p>Compose a song when you are in mood</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/pf(3).jpg" alt="Flower">
+                            <div class="carousel-caption">
+                                <h4>Feel</h4>
+                                <p>Feel for your own life</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/pf(4).jpg" alt="Flower">
+                            <div class="carousel-caption">
+                                <h4>Create</h4>
+                                <p>Let's write a new song</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls
+                  <a class="left carousel-control" href="#myCarousel" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a> -->
+                </div>
             </div>
         </section>
+
     </div>
 
+    <footer>
+        <h1>Alynn's Personal Blog</h1>
+        <div class="sub-ft">
+            <div class="ft-content">
+                <h3>Contact me</h3>
+                <div class="ft-link">
+                    <i class="fa-brands fa-youtube fa-2x"></i><li>Youtube</li>
+                    <i class="fa-brands fa-facebook fa-2x"></i><li>Facebook</li>
+                    <i class="fa-brands fa-telegram fa-2x"></i><li>Telegram</li>
+                </div>
+    
+            </div>
+    
+            <div class="ft-content">
+                <h3>Music</h3>
+                <div class="ft-link">
+                    <i class="fa-brands fa-youtube fa-2x"></i><li>Youtube</li>
+                    <i class="fa-brands fa-facebook fa-2x"></i><li>Facebook</li>
+                    <i class="fa-brands fa-telegram fa-2x"></i><li>Telegram</li>
+                </div>
+                
+            </div>
+    
+            <div class="ft-content">
+                <h3>Official MTV</h3>
+                <div class="ft-link">
+                    <i class="fa-brands fa-youtube fa-2x"></i><li>Youtube</li>
+                    <i class="fa-brands fa-facebook fa-2x"></i><li>Facebook</li>
+                    <i class="fa-brands fa-telegram fa-2x"></i><li>Telegram</li>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="ft-copyright">
+            <p>Copyright 2023 by Rakkha. All Rights Reserved.</p>
+            <p>This is Powered by Rakkha Lin Maung</p>
+        </div>
+    </footer>
+
+    <script src="res/act.js" type="text/JavaScript"></script>
+
     <script>
-        window.onscroll = function () { myFunction() };
 
-        // Get the navbar
-        var navbar = document.querySelector('.nav-bar');
-        var sticky = navbar.offsetTop;
+        //jQuery
+        $(document).ready(function () {
 
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
+            $("#myCarousel").carousel({ interval: 1500, pause: "hover" });
+            // Activate Carousel
+            $("#myCarousel").carousel();
 
-        let menuOpen = false;
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function () {
+                $("#myCarousel").carousel(3);
+            });
 
-        var hamburger = document.querySelector('.hamburger');
-        var hamburgerBtn = document.querySelector('.hamburger-btn');
-        var linkContainer = document.querySelector('.link-container');
+            // // Enable Carousel Controls
+            // $(".left").click(function () {
+            //     $("#myCarousel").carousel("prev");
+            // });
+            // $(".right").click(function () {
+            //     $("#myCarousel").carousel("next");
+            // });
 
-        hamburger.addEventListener('click', () => {
-            if(!menuOpen) {
-                hamburgerBtn.classList.add('active');
-                linkContainer.classList.add('active');
-                console.log("open")
-                menuOpen = true;
-            } else {
-                hamburgerBtn.classList.remove('active');
-                linkContainer.classList.remove('active');
-                menuOpen = false;
-                console.log("false")
-            }
+
+
+
+
+
+
         })
 
 
